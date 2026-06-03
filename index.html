@@ -1,11 +1,524 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Igreja Presbiteriana de Prazeres</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <h1>Hello World</h1>
+
+  <!-- ═══════════════════════════════════════════ NAVBAR ═══ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <div class="navbar__brand">
+        <div class="navbar__logo">
+          <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+            <!-- Cruz presbiteriana estilizada -->
+            <circle cx="30" cy="30" r="28" stroke="var(--gold)" stroke-width="1.5"/>
+            <rect x="27" y="10" width="6" height="40" fill="var(--gold)" rx="1"/>
+            <rect x="14" y="23" width="32" height="6" fill="var(--gold)" rx="1"/>
+            <circle cx="30" cy="30" r="5" fill="var(--navy)" stroke="var(--gold)" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="navbar__title">
+          <span class="navbar__title-main">Igreja Presbiteriana</span>
+          <span class="navbar__title-sub">de Prazeres</span>
+        </div>
+      </div>
+
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#sobre" class="navbar__link">Sobre</a>
+        <a href="#cultos" class="navbar__link">Cultos</a>
+        <a href="#eventos" class="navbar__link">Eventos</a>
+        <a href="#salterio" class="navbar__link">Saltério</a>
+        <a href="#arquivos" class="navbar__link">Arquivos</a>
+        <a href="#contato" class="navbar__link">Contato</a>
+      </nav>
+
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════ HERO ═══ -->
+  <section class="hero">
+    <div class="hero__ornament hero__ornament--tl"></div>
+    <div class="hero__ornament hero__ornament--br"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Sola Scriptura · Sola Gratia · Sola Fide</p>
+      <h1 class="hero__title">Igreja Presbiteriana<br/><em>de Prazeres</em></h1>
+      <div class="hero__divider">
+        <span class="hero__divider-line"></span>
+        <svg viewBox="0 0 24 24" class="hero__divider-icon"><path d="M12 2 L12 22 M2 12 L22 12" stroke="currentColor" stroke-width="1.5"/></svg>
+        <span class="hero__divider-line"></span>
+      </div>
+      <p class="hero__verse">"A tua palavra é lâmpada para os meus pés e luz para o meu caminho."</p>
+      <p class="hero__verse-ref">Salmos 119:105</p>
+      <div class="hero__actions">
+        <a href="#cultos" class="btn btn--primary">Horários de Culto</a>
+        <a href="#sobre" class="btn btn--ghost">Conheça-nos</a>
+      </div>
+    </div>
+    <div class="hero__scroll-hint">↓</div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ SOBRE ═══ -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Nossa Igreja</span>
+        <h2 class="section__title">Sobre a Igreja Presbiteriana<br/>de Prazeres</h2>
+        <div class="ornamental-rule"></div>
+      </div>
+      <div class="about__grid">
+        <div class="about__text">
+          <p>A Igreja Presbiteriana de Prazeres é uma congregação reformada fiel à Palavra de Deus e às confissões históricas da fé cristã. Fundada sob os princípios da Reforma Protestante, somos uma comunidade que busca glorificar a Deus em tudo que fazemos — no culto, na família, na comunidade e no mundo.</p>
+          <p>Cremos na soberania de Deus, na suficiência das Escrituras, e na graça imerecida de Cristo como o único caminho de salvação. Nossa missão é pregar o Evangelho integral, discipular as nações e trazer glória ao nome de Cristo.</p>
+          <blockquote class="about__quote">
+            "O fim principal do homem é glorificar a Deus e gozar d'Ele para sempre."
+            <cite>— Catecismo Maior de Westminster</cite>
+          </blockquote>
+        </div>
+        <div class="about__pillars">
+          <div class="pillar">
+            <div class="pillar__icon">✦</div>
+            <h3>Palavra</h3>
+            <p>A Bíblia Sagrada é a nossa única regra de fé e prática.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon">✦</div>
+            <h3>Oração</h3>
+            <p>Vivemos em dependência de Deus em oração constante.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon">✦</div>
+            <h3>Comunhão</h3>
+            <p>Somos família — unidos em Cristo, servindo uns aos outros.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon">✦</div>
+            <h3>Missão</h3>
+            <p>Levamos o Evangelho às nações e às gerações futuras.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CULTOS ═══ -->
+  <section class="section section--dark" id="cultos">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag section__tag--light">Adoração</span>
+        <h2 class="section__title section__title--light">Horários de Cultos<br/>e Reuniões</h2>
+        <div class="ornamental-rule ornamental-rule--light"></div>
+      </div>
+      <div class="schedule__grid">
+
+        <div class="schedule__card">
+          <div class="schedule__day">Domingo</div>
+          <div class="schedule__items">
+            <div class="schedule__item">
+              <span class="schedule__time">09h00</span>
+              <div>
+                <strong>Escola Bíblica Dominical</strong>
+                <p>Estudo das Escrituras para todas as idades</p>
+              </div>
+            </div>
+            <div class="schedule__item">
+              <span class="schedule__time">10h30</span>
+              <div>
+                <strong>Culto Público de Adoração</strong>
+                <p>Pregação da Palavra e Saltério Reformado</p>
+              </div>
+            </div>
+            <div class="schedule__item">
+              <span class="schedule__time">19h00</span>
+              <div>
+                <strong>Culto Noturno</strong>
+                <p>Pregação expositiva e comunhão</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule__card">
+          <div class="schedule__day">Quarta-feira</div>
+          <div class="schedule__items">
+            <div class="schedule__item">
+              <span class="schedule__time">19h30</span>
+              <div>
+                <strong>Reunião de Oração</strong>
+                <p>Intercessão e estudo da Palavra</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule__card">
+          <div class="schedule__day">Sexta-feira</div>
+          <div class="schedule__items">
+            <div class="schedule__item">
+              <span class="schedule__time">19h30</span>
+              <div>
+                <strong>Reunião de Jovens</strong>
+                <p>Estudo, comunhão e discipulado</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p class="schedule__note">📍 Todos os cultos são realizados no templo da Igreja Presbiteriana de Prazeres. Você é muito bem-vindo!</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ EVENTOS ═══ -->
+  <section class="section" id="eventos">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Agenda</span>
+        <h2 class="section__title">Próximos Eventos</h2>
+        <div class="ornamental-rule"></div>
+      </div>
+      <div class="events__grid">
+
+        <article class="event__card">
+          <div class="event__date">
+            <span class="event__day">15</span>
+            <span class="event__month">JUN</span>
+          </div>
+          <div class="event__info">
+            <span class="event__tag">Conferência</span>
+            <h3>Conferência Reformada de Prazeres</h3>
+            <p>Um dia de exposição doutrinária e adoração com base nas confissões reformadas.</p>
+            <span class="event__time">🕘 09h00 – 17h00</span>
+          </div>
+        </article>
+
+        <article class="event__card">
+          <div class="event__date">
+            <span class="event__day">22</span>
+            <span class="event__month">JUN</span>
+          </div>
+          <div class="event__info">
+            <span class="event__tag">Família</span>
+            <h3>Encontro de Famílias</h3>
+            <p>Tarde de comunhão, jogos e reflexão sobre o lar cristão segundo a Palavra.</p>
+            <span class="event__time">🕒 15h00 – 18h00</span>
+          </div>
+        </article>
+
+        <article class="event__card">
+          <div class="event__date">
+            <span class="event__day">06</span>
+            <span class="event__month">JUL</span>
+          </div>
+          <div class="event__info">
+            <span class="event__tag">Missões</span>
+            <h3>Domingo de Missões</h3>
+            <p>Apresentação dos projetos missionários e culto especial com missionários parceiros.</p>
+            <span class="event__time">🕙 10h30</span>
+          </div>
+        </article>
+
+        <article class="event__card">
+          <div class="event__date">
+            <span class="event__day">20</span>
+            <span class="event__month">JUL</span>
+          </div>
+          <div class="event__info">
+            <span class="event__tag">Jovens</span>
+            <h3>Retiro da Juventude</h3>
+            <p>Fim de semana de discipulado, adoração e comunhão para os jovens da igreja.</p>
+            <span class="event__time">🏕 Sexta a Domingo</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ SALTÉRIO ═══ -->
+  <section class="section section--cream" id="salterio">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Adoração Cantada</span>
+        <h2 class="section__title">O Saltério Reformado</h2>
+        <div class="ornamental-rule"></div>
+      </div>
+      <div class="psalter__layout">
+        <div class="psalter__intro">
+          <p class="psalter__lead">O Saltério Reformado é a prática de cantar exclusivamente os 150 Salmos do Antigo Testamento no culto público de adoração a Deus.</p>
+          <p>Essa prática, profundamente enraizada na tradição reformada e presbiteriana histórica, reconhece que os Salmos são o hinário divinamente inspirado e entregue por Deus à Sua Igreja. Quando cantamos os Salmos, cantamos as próprias palavras de Deus.</p>
+          <p>Na Igreja Presbiteriana de Prazeres, adotamos o Saltério como parte central do nosso culto, cantando as metrificações sálmicas que atravessaram séculos da Igreja cristã fiel.</p>
+        </div>
+        <div class="psalter__reasons">
+          <h3 class="psalter__reasons-title">Por que cantar os Salmos?</h3>
+          <ul class="psalter__list">
+            <li>
+              <span class="psalter__num">I</span>
+              <div><strong>Inspiração Divina</strong> — Os Salmos são Palavra de Deus. Nenhum hino humano possui esta autoridade.</div>
+            </li>
+            <li>
+              <span class="psalter__num">II</span>
+              <div><strong>Tradição Histórica</strong> — A Igreja reformada dos séculos XVI e XVII adorava cantando o Saltério exclusivamente.</div>
+            </li>
+            <li>
+              <span class="psalter__num">III</span>
+              <div><strong>Riqueza Teológica</strong> — Os Salmos cobrem toda a gama da experiência humana à luz da soberania de Deus.</div>
+            </li>
+            <li>
+              <span class="psalter__num">IV</span>
+              <div><strong>Princípio Regulativo</strong> — Adoramos a Deus somente como Ele ordenou, usando Suas próprias palavras.</div>
+            </li>
+          </ul>
+        </div>
+        <div class="psalter__psalm">
+          <div class="psalter__psalm-number">Salmo 100</div>
+          <p class="psalter__psalm-text"><em>"Jubilai ao SENHOR, todas as terras. Servi ao SENHOR com alegria; apresentai-vos diante dele com cânticos de júbilo."</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ ARQUIVOS ═══ -->
+  <section class="section" id="arquivos">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Documentos</span>
+        <h2 class="section__title">Arquivos Importantes</h2>
+        <div class="ornamental-rule"></div>
+      </div>
+      <div class="files__grid">
+
+        <div class="files__category">
+          <h3 class="files__cat-title">⛪ História da Igreja</h3>
+          <ul class="files__list">
+            <li class="files__item">
+              <span class="files__icon">📄</span>
+              <div>
+                <strong>História da IPB de Prazeres</strong>
+                <p>Origens, crescimento e testemunho ao longo dos anos</p>
+              </div>
+              <a href="#" class="files__btn">Ler</a>
+            </li>
+            <li class="files__item">
+              <span class="files__icon">📄</span>
+              <div>
+                <strong>Breve História do Presbiterianismo no Brasil</strong>
+                <p>A chegada da Reforma ao Brasil e seus frutos</p>
+              </div>
+              <a href="#" class="files__btn">Ler</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="files__category">
+          <h3 class="files__cat-title">📜 Confissões de Fé</h3>
+          <ul class="files__list">
+            <li class="files__item">
+              <span class="files__icon">📜</span>
+              <div>
+                <strong>Confissão de Fé de Westminster</strong>
+                <p>O padrão doutrinário da tradição reformada (1647)</p>
+              </div>
+              <a href="#" class="files__btn">Ler</a>
+            </li>
+            <li class="files__item">
+              <span class="files__icon">📜</span>
+              <div>
+                <strong>Catecismo Maior de Westminster</strong>
+                <p>Instrução completa na fé cristã reformada</p>
+              </div>
+              <a href="#" class="files__btn">Ler</a>
+            </li>
+            <li class="files__item">
+              <span class="files__icon">📜</span>
+              <div>
+                <strong>Breve Catecismo de Westminster</strong>
+                <p>Resumo da doutrina cristã para todas as idades</p>
+              </div>
+              <a href="#" class="files__btn">Ler</a>
+            </li>
+            <li class="files__item">
+              <span class="files__icon">📜</span>
+              <div>
+                <strong>Cânones de Dort</strong>
+                <p>A resposta reformada ao arminianismo (1618–1619)</p>
+              </div>
+              <a href="#" class="files__btn">Ler</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="files__category">
+          <h3 class="files__cat-title">🌍 Projetos Missionários</h3>
+          <ul class="files__list">
+            <li class="files__item">
+              <span class="files__icon">🌍</span>
+              <div>
+                <strong>Missões Nacionais</strong>
+                <p>Missionários apoiados pela nossa congregação no Brasil</p>
+              </div>
+              <a href="#" class="files__btn">Ver</a>
+            </li>
+            <li class="files__item">
+              <span class="files__icon">🌍</span>
+              <div>
+                <strong>Missões Internacionais</strong>
+                <p>Parcerias missionárias além-fronteiras</p>
+              </div>
+              <a href="#" class="files__btn">Ver</a>
+            </li>
+            <li class="files__item">
+              <span class="files__icon">🌍</span>
+              <div>
+                <strong>Relatório Anual de Missões</strong>
+                <p>Frutos e necessidades da obra missionária 2024</p>
+              </div>
+              <a href="#" class="files__btn">Baixar</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CONTATO ═══ -->
+  <section class="section section--dark" id="contato">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag section__tag--light">Fale Conosco</span>
+        <h2 class="section__title section__title--light">Contato</h2>
+        <div class="ornamental-rule ornamental-rule--light"></div>
+      </div>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact__item">
+            <span class="contact__icon">📍</span>
+            <div>
+              <strong>Endereço</strong>
+              <p>Rua das Prazeres, 000<br/>Prazeres – PE, Brasil</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon">📞</span>
+            <div>
+              <strong>Telefone</strong>
+              <p>(81) 9 0000-0000</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon">✉️</span>
+            <div>
+              <strong>E-mail</strong>
+              <p>contato@ipprazeres.com.br</p>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon">📱</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <p>(81) 9 0000-0000</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact__form-wrap">
+          <form class="contact__form">
+            <div class="form__group">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Seu nome completo" />
+            </div>
+            <div class="form__group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="seu@email.com" />
+            </div>
+            <div class="form__group">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="footer__logo">
+            <circle cx="20" cy="20" r="18" stroke="var(--gold)" stroke-width="1"/>
+            <rect x="18" y="6" width="4" height="28" fill="var(--gold)" rx="0.5"/>
+            <rect x="9" y="16" width="22" height="4" fill="var(--gold)" rx="0.5"/>
+          </svg>
+          <div>
+            <p class="footer__name">Igreja Presbiteriana de Prazeres</p>
+            <p class="footer__tagline">Reformada · Confessional · Missionária</p>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <a href="#sobre">Sobre</a>
+          <a href="#cultos">Cultos</a>
+          <a href="#eventos">Eventos</a>
+          <a href="#salterio">Saltério</a>
+          <a href="#arquivos">Arquivos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>"Sola Scriptura, Sola Gratia, Sola Fide, Solus Christus, Soli Deo Gloria"</p>
+        <p class="footer__copy">© 2025 Igreja Presbiteriana de Prazeres · Todos os direitos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('navbar--scrolled', window.scrollY > 60);
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('navbar__nav--open');
+      hamburger.classList.toggle('active');
+    });
+
+    // Close menu on link click
+    document.querySelectorAll('.navbar__link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('navbar__nav--open');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    // Smooth entrance animations on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(
+      '.about__text, .about__pillars, .pillar, .schedule__card, .event__card, .files__category, .psalter__intro, .psalter__reasons, .psalter__psalm, .contact__info, .contact__form-wrap'
+    ).forEach(el => observer.observe(el));
+  </script>
+
 </body>
-</html>
+</html>         
